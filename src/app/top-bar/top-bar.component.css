@@ -1,0 +1,29 @@
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: skyblue; /* Change background color to sky blue */
+    padding: 10px;
+  }
+  
+  .company-name {
+    font-size: 24px;
+    color: rgb(1, 61, 92); /* Set the company name color to grey */
+    font-weight: bold;
+  }
+  
+  .clock {
+    font-family: 'Times New Roman', Times, serif; /* Set the font to Times New Roman */
+    font-weight: bold; /* Make the time text bold */
+    font-size: 16px;
+    color: rgb(236, 11, 11); /* Optionally change the color of the time */
+  }
+  
+  .user-settings button {
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: #4e47d1;
+  }
+  

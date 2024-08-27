@@ -1,0 +1,21 @@
+.sidebar {
+    height: 100vh; /* Full height of the viewport */
+    width: 200px; /* Adjust width as needed */
+    background-color: rgb(194, 191, 191); /* Set background color to grey */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-item {
+    padding: 15px;
+    font-size: 18px;
+    color: rgb(5, 11, 121); /* Set text color to white */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Make text bold */
+    border-bottom: 1px solid #efeded; /* Add a bottom border for separation */
+  }
+  
+  .sidebar-item:hover {
+    background-color: #f1f4f3; /* Darker background on hover */
+  }
+  
