@@ -1,5 +1,15 @@
 <div class="sidebar">
-    <a routerLink="/certificate-management" class="sidebar-item">Certificate Management</a>
-    <a routerLink="/cost-management" class="sidebar-item">Cost Management</a>
+  <a href="/certificate-management" class="sidebar-item">Certificate Management</a>
+
+  <!-- Cost Management with Dropdown and Icon -->
+  <div class="dropdown">
+    <a href="javascript:void(0)" class="sidebar-item" (click)="toggleDropdown()">
+      Cost Management 
+      <span class="dropdown-icon">{{ isDropdownVisible ? '▲' : '▼' }}</span>
+    </a>
+    <div [ngClass]="{ 'show': isDropdownVisible }" class="dropdown-content">
+      <a href="/Sonatacost-management" class="dropdown-item" (click)="navigateTo('sonata-cost-management')">Sonata Cost Management</a>
+      <a href="/Distillcost-management" class="dropdown-item" (click)="navigateTo('distill-cost-management')">Distill Cost Management</a>
+    </div>
   </div>
-  
+</div>

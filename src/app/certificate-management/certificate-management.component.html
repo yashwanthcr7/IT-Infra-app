@@ -1,1 +1,17 @@
-<p>certificate-management works!</p>
+<div class="certificate-container">
+    <h1>Certificate Management</h1>
+    
+    <div class="certificate-info">
+      <p>You can view, upload, or delete certificates.</p>
+    </div>
+  
+    <div class="actions">
+      <button class="action-button">View Certificates</button>
+      <button class="action-button" (click)="triggerFileUpload()">Upload Certificate</button>
+      <button class="action-button">Delete Certificate</button>
+      
+      <!-- Hidden file input -->
+      <input type="file" id="fileInput" style="display: none;" (change)="onFileSelected($event)">
+    </div>
+  </div>
+  

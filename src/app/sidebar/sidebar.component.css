@@ -1,21 +1,50 @@
+/* Sidebar styles */
 .sidebar {
-    height: 100vh; /* Full height of the viewport */
-    width: 200px; /* Adjust width as needed */
-    background-color: rgb(194, 191, 191); /* Set background color to grey */
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .sidebar-item {
-    padding: 15px;
-    font-size: 18px;
-    color: rgb(5, 11, 121); /* Set text color to white */
-    text-decoration: none; /* Remove underline from links */
-    font-weight: bold; /* Make text bold */
-    border-bottom: 1px solid #efeded; /* Add a bottom border for separation */
-  }
-  
-  .sidebar-item:hover {
-    background-color: #f1f4f3; /* Darker background on hover */
-  }
-  
+  width: 250px;
+  background-color: #e2cece;
+  padding: 15px;
+  height: 100%;
+}
+
+.sidebar-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.sidebar-item:hover {
+  background-color: #ddd;
+}
+
+/* Dropdown Icon */
+.dropdown-icon {
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+/* Dropdown styles */
+.dropdown-content {
+  display: none;
+  padding-left: 20px; /* Indentation for dropdown items */
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #555;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown when the class is applied */
+.show {
+  display: block;
+}
